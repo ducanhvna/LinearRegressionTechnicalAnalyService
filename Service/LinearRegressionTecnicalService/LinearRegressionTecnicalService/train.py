@@ -5,9 +5,9 @@ from collectdata import CollectAllRawData, CollectTrainData
 from preparedata import NormalizeData
 
 # Collect data
-data_1,data_5,data_10,data_20= CollectAllRawData('5','10')
+data_1,data_5,data_10,data_20= CollectAllRawData('1','5','10','20')
 
-dataset = CollectTrainData(data_5=data_5,data_10= data_10)
+slopeDataset, intercept_dataset = CollectTrainData(data_5=data_5,data_10= data_10, windowsize = 15)
 
 
 # Prepare data

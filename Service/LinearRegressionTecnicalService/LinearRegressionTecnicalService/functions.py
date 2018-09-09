@@ -9,7 +9,7 @@ def LinearRegressionCalculate(x_train, y_train):
     a,b = np.polyfit(x_train,y_train)
     forcast = a*len(x_train)+b
 
-    return [a,b,forcast]
+    return a,b,forcast
 
 # Time series data 
 def TimeSeriesLinearRegression(rawdata, windowsize, index):
@@ -22,11 +22,10 @@ def TimeSeriesLinearRegression(rawdata, windowsize, index):
             x_train.append(i)
             value = y_train[index - windowsize + i + 1]
             y_train.append(value)
-        result = LinearRegressionCalculate(x_train, y_train)
+        lrvalue = LinearRegressionCalculate(x_train, y_train)
+        return lrvalue
     else:
-        result = ['', '', '']
-
-    return result
+        return '','',''
 
 # Find location in rawdata by time
 def FindLocationbyTime(rawdata, datetime):

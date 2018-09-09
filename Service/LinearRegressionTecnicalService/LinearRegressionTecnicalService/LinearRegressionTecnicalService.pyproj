@@ -36,6 +36,9 @@
     <Compile Include="functions.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="makedecision.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="preparedata.py">
       <SubType>Code</SubType>
     </Compile>
