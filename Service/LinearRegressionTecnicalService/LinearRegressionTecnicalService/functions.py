@@ -6,7 +6,7 @@ def Normalize(standard, value):
 
 # LinearRegressionCalculate
 def LinearRegressionCalculate(x_train, y_train):
-    a,b = np.polyfit(x_train,y_train)
+    a,b = np.polyfit(x_train,y_train,1)
     forcast = a*len(x_train)+b
 
     return a,b,forcast
@@ -20,7 +20,7 @@ def TimeSeriesLinearRegression(rawdata, windowsize, index):
         #Create x train from 0 to windowsize
         for i in range(0, windowsize):
             x_train.append(i)
-            value = y_train[index - windowsize + i + 1]
+            value = float(rawdata[index - windowsize + i + 1][4])
             y_train.append(value)
         lrvalue = LinearRegressionCalculate(x_train, y_train)
         return lrvalue

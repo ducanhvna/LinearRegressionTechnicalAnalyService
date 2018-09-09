@@ -33,14 +33,14 @@ def CollectTrainData(rawdata_5, rawdata_10, windowsize):
 
         # find coresponding index
         datetimestring = rawdata_5[i][0]
-        datetimeObject = datetime.strptime(datatimestring, '%d/%m/%Y %H:%M:%S')
+        datetimeObject = datetime.strptime(datetimestring, '%d/%m/%Y %H:%M:%S')
         co_index_10 = FindLocationbyTime(rawdata_10, datetimeObject)
-        a,b,forcast  = TimeSeriesLinearRegression(rawdata_10, windowsize, i)
+        a,b,forcast  = TimeSeriesLinearRegression(rawdata_10, windowsize, co_index_10)
         lrarray_10.append([a,b,forcast])
     return lrarray_5, lrarray_10
 
 # List all cadidate point
-def ListCandidatePoint(rawdata_5, lrarray_5, lrarray_10):
+def ListCandidatePoint(rawdata_5, lrarray_5):
     candidatevalues = []
     candidatedecision = []
     for i in range(0, len(rawdata_5)):
