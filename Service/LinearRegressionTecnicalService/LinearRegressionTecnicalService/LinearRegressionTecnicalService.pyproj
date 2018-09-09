@@ -27,9 +27,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="collectdata.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="evaluate.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="preparedata.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="LinearRegressionTecnicalService\__init__.py" />
     <Compile Include="LinearRegressionTecnicalService\views.py" />
+    <Compile Include="train.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LinearRegressionTecnicalService\" />
@@ -38,6 +53,7 @@
     <Folder Include="LinearRegressionTecnicalService\static\fonts\" />
     <Folder Include="LinearRegressionTecnicalService\static\scripts\" />
     <Folder Include="LinearRegressionTecnicalService\templates\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
