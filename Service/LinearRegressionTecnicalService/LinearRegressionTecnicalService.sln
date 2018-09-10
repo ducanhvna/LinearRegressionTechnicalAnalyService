@@ -7,6 +7,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LinearRegressionTecnicalSer
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LinearRegression_Time10_CloseBase", "LinearRegression_Time10_CloseBase\LinearRegression_Time10_CloseBase.pyproj", "{D2A956E1-8C97-477C-BB45-8B277A29B048}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "LinearRegression1_5_15", "LinearRegression1_5_15\LinearRegression1_5_15.pyproj", "{0DBC4B08-CBA0-4779-B1B5-4C77183A84AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,8 @@ Global
 		{B7E5B2C9-BC75-4C41-ADD8-AB627CAB6A86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D2A956E1-8C97-477C-BB45-8B277A29B048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2A956E1-8C97-477C-BB45-8B277A29B048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBC4B08-CBA0-4779-B1B5-4C77183A84AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBC4B08-CBA0-4779-B1B5-4C77183A84AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
